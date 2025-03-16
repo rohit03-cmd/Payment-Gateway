@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAY it's BINGO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAY it's BINGO</h2>
+        <div class="option">
+            <input type="radio" name="bundle" id="one-pair" value="15" onclick="updateTotal()">
+            <label for="one-pair">1 Pair (Standard Price) - USD 15.00 <span>50% OFF</span></label>
+            <div id="size-color-options" class="select"></div>
+            <div>
+                <select name="Size" id="Size"></select>
+                <select class="size" select="Size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <select name="Colour" id="colour"></select>
+                <select class="colour">
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Black">Black</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="option">
+            <input type="radio" name="bundle" id="two-pair" value="35" onclick="updateTotal()">
+            <label for="two-pair">2 Pair (Most Popular)- USD 35.00 <span>40% OFF</span></label>
+            <div id="size-color-options" class="select"></div>
+            <div>
+                <select name="Size" id="Size"></select>
+                <select class="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <select name="Color" id="Color"></select>
+                <select class="color">
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Black">Black</option>
+                </select>
+            </div>
+        </div>
+        <div class="option">
+            <input type="radio" name="bundle" id="three-pair" value="55" onclick="showOptions(); updateTotal();">
+            <label for="three-pair">3 Pair (Best Deal)- USD 55.00 <span>60% OFF</span></label>
+            <div id="size-color-options" class="select">
+           
+                <div>
+                    <select name="Size" id="Size"></select>
+                    <select class="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select name="Color" id="Color"></select>
+                    <select class="color">
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Black">Black</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <p>Total: USD <span id="total-price">0</span>.00</p>
+        <button onclick="addToCart()">+ Add to Cart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
